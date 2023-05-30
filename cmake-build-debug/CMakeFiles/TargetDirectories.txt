@@ -1,0 +1,3 @@
+C:/Users/pc/Desktop/programiranje/sort_visualization/cmake-build-debug/CMakeFiles/sort_visualization.dir
+C:/Users/pc/Desktop/programiranje/sort_visualization/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/pc/Desktop/programiranje/sort_visualization/cmake-build-debug/CMakeFiles/rebuild_cache.dir
