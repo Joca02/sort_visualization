@@ -1,7 +1,9 @@
 #include <iostream>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
-
+#include "Algoritam.hpp"
+#include "Insertion_sort.hpp"
+#include "Selection_sort.hpp"
 #define WINDOW_WIDTH 1000
 #define WINDOW_HEIGHT 800
 
@@ -12,14 +14,21 @@ void quick_sort(sf::RectangleShape * pRect,int start,int end);
 int partition(sf::RectangleShape * pRect,int start,int end);
 void display(const sf::RectangleShape * pRect);
 
-enum Algoritmi{Selection_sort,Bubble_sort,Insertion_sort,Quick_sort};
+//enum Algoritmi{Selection_sort,Bubble_sort,Insertion_sort,Quick_sort};
 
-sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH,WINDOW_HEIGHT),"SORTING VISUALIZATION");
+/*sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH,WINDOW_HEIGHT),"SORTING VISUALIZATION");
 int n=300;
 sf::Text timeElapsed;
-sf::Clock clock1;
+sf::Clock clock1;*/
+int main()
+{
+    Algoritam* a=new Selection_sort();
+    a->sortiraj();
 
-int main() {
+
+    return 0;
+}
+/*int main() {
 
     srand(time(NULL));
 
@@ -54,8 +63,7 @@ int main() {
 
      //selection_sort(pRect);
     //bubble_sort(pRect);
-
-  // insertion_sort(pRect);
+    // insertion_sort(pRect);
 
     quick_sort(pRect,0,n-1);
     while (window.isOpen())
@@ -72,9 +80,9 @@ int main() {
     delete [] pRect;
 
         return 0;
-}
+}*/
 
-void display(const sf::RectangleShape * pRect)
+/*void display(const sf::RectangleShape * pRect)
 {
     window.clear();
     for(int i=0;i<n;i++)
@@ -196,4 +204,4 @@ int partition(sf::RectangleShape * pRect,int start,int end)
     display(pRect);
 
     return i;
-}
+}*/

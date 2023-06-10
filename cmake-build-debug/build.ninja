@@ -56,6 +56,34 @@ build CMakeFiles/sort_visualization.dir/main.cpp.obj: CXX_COMPILER__sort_visuali
   OBJECT_DIR = CMakeFiles\sort_visualization.dir
   OBJECT_FILE_DIR = CMakeFiles\sort_visualization.dir
 
+build CMakeFiles/sort_visualization.dir/Algoritam.cpp.obj: CXX_COMPILER__sort_visualization_Debug C$:/Users/pc/Desktop/programiranje/sort_visualization/Algoritam.cpp || cmake_object_order_depends_target_sort_visualization
+  DEP_FILE = CMakeFiles\sort_visualization.dir\Algoritam.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -isystem C:/SFML/SFML-2.5.1/include
+  OBJECT_DIR = CMakeFiles\sort_visualization.dir
+  OBJECT_FILE_DIR = CMakeFiles\sort_visualization.dir
+
+build CMakeFiles/sort_visualization.dir/Insertion_sort.cpp.obj: CXX_COMPILER__sort_visualization_Debug C$:/Users/pc/Desktop/programiranje/sort_visualization/Insertion_sort.cpp || cmake_object_order_depends_target_sort_visualization
+  DEP_FILE = CMakeFiles\sort_visualization.dir\Insertion_sort.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -isystem C:/SFML/SFML-2.5.1/include
+  OBJECT_DIR = CMakeFiles\sort_visualization.dir
+  OBJECT_FILE_DIR = CMakeFiles\sort_visualization.dir
+
+build CMakeFiles/sort_visualization.dir/Prozor.cpp.obj: CXX_COMPILER__sort_visualization_Debug C$:/Users/pc/Desktop/programiranje/sort_visualization/Prozor.cpp || cmake_object_order_depends_target_sort_visualization
+  DEP_FILE = CMakeFiles\sort_visualization.dir\Prozor.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -isystem C:/SFML/SFML-2.5.1/include
+  OBJECT_DIR = CMakeFiles\sort_visualization.dir
+  OBJECT_FILE_DIR = CMakeFiles\sort_visualization.dir
+
+build CMakeFiles/sort_visualization.dir/Selection_sort.cpp.obj: CXX_COMPILER__sort_visualization_Debug C$:/Users/pc/Desktop/programiranje/sort_visualization/Selection_sort.cpp || cmake_object_order_depends_target_sort_visualization
+  DEP_FILE = CMakeFiles\sort_visualization.dir\Selection_sort.cpp.obj.d
+  FLAGS = -g
+  INCLUDES = -isystem C:/SFML/SFML-2.5.1/include
+  OBJECT_DIR = CMakeFiles\sort_visualization.dir
+  OBJECT_FILE_DIR = CMakeFiles\sort_visualization.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target sort_visualization
@@ -64,7 +92,7 @@ build CMakeFiles/sort_visualization.dir/main.cpp.obj: CXX_COMPILER__sort_visuali
 #############################################
 # Link the executable sort_visualization.exe
 
-build sort_visualization.exe: CXX_EXECUTABLE_LINKER__sort_visualization_Debug CMakeFiles/sort_visualization.dir/main.cpp.obj | C$:/SFML/SFML-2.5.1/lib/libsfml-graphics-d.a C$:/SFML/SFML-2.5.1/lib/libsfml-audio-d.a C$:/SFML/SFML-2.5.1/lib/libsfml-window-d.a C$:/SFML/SFML-2.5.1/lib/libsfml-system-d.a
+build sort_visualization.exe: CXX_EXECUTABLE_LINKER__sort_visualization_Debug CMakeFiles/sort_visualization.dir/main.cpp.obj CMakeFiles/sort_visualization.dir/Algoritam.cpp.obj CMakeFiles/sort_visualization.dir/Insertion_sort.cpp.obj CMakeFiles/sort_visualization.dir/Prozor.cpp.obj CMakeFiles/sort_visualization.dir/Selection_sort.cpp.obj | C$:/SFML/SFML-2.5.1/lib/libsfml-graphics-d.a C$:/SFML/SFML-2.5.1/lib/libsfml-audio-d.a C$:/SFML/SFML-2.5.1/lib/libsfml-window-d.a C$:/SFML/SFML-2.5.1/lib/libsfml-system-d.a
   FLAGS = -g
   LINK_LIBRARIES = C:/SFML/SFML-2.5.1/lib/libsfml-graphics-d.a  C:/SFML/SFML-2.5.1/lib/libsfml-audio-d.a  C:/SFML/SFML-2.5.1/lib/libsfml-window-d.a  C:/SFML/SFML-2.5.1/lib/libsfml-system-d.a  -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\sort_visualization.dir
