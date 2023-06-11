@@ -3,7 +3,7 @@ project(sort_visualization)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(sort_visualization main.cpp Algoritam.cpp Algoritam.hpp Insertion_sort.cpp Insertion_sort.hpp Prozor.cpp Prozor.hpp Selection_sort.cpp Selection_sort.hpp)
+add_executable(sort_visualization main.cpp Algoritam.cpp Algoritam.hpp Insertion_sort.cpp Insertion_sort.hpp Prozor.cpp Prozor.hpp Selection_sort.cpp Selection_sort.hpp Bubble_sort.cpp Bubble_sort.hpp Quick_sort.cpp Quick_sort.hpp Program.cpp Program.hpp)
 set(SFML_STATIC_LIBARIES TRUE)
 set(SFML_DIR C:/SFML/SFML-2.5.1/lib/cmake/SFML)
 find_package(SFML COMPONENTS system window graphics audio REQUIRED)

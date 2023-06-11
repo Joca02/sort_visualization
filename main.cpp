@@ -1,9 +1,7 @@
 #include <iostream>
 #include <cstdlib>
 #include <SFML/Graphics.hpp>
-#include "Algoritam.hpp"
-#include "Insertion_sort.hpp"
-#include "Selection_sort.hpp"
+#include "Program.hpp"
 #define WINDOW_WIDTH 1000
 #define WINDOW_HEIGHT 800
 
@@ -22,9 +20,7 @@ sf::Text timeElapsed;
 sf::Clock clock1;*/
 int main()
 {
-    Algoritam* a=new Selection_sort();
-    a->sortiraj();
-
+    Program::Start();
 
     return 0;
 }
