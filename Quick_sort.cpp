@@ -1,6 +1,4 @@
-//
-// Created by pc on 6/11/2023.
-//
+
 
 #include "Quick_sort.hpp"
 
@@ -56,4 +54,13 @@ void quick_sort(sf::RectangleShape * pRect,int start,int end)
 void Quick_sort::sortiraj()
 {
     quick_sort(pRect,0,N-1);
+    while (Prozor::GetProzor().isOpen())
+    {
+        sf::Event event;
+        while (Prozor::GetProzor().pollEvent(event))
+        {
+            if (event.type == sf::Event::Closed)
+                Prozor::GetProzor().close();
+        }
+    }
 }

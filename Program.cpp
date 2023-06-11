@@ -27,7 +27,7 @@ void Program::Start()
     txtIzabrani.setPosition(280.f,300.f);
     txtIzabrani.setCharacterSize(40);
     potvrda= false;
-    int izabrani=0;
+    int izabrani=QUICK_SORT;
     while (window.isOpen())
     {
 
@@ -58,12 +58,12 @@ void Program::Start()
         }
         if(potvrda)
         {
+            Prozor::CreateProzor();
             Algoritam *pA= KreirajObj(izabrani);
             potvrda= false;
             pA->sortiraj();
 
             delete  pA;
-
         }
         txtIzabrani.setString(PromeniTxt(izabrani));
         window.clear();
@@ -95,15 +95,15 @@ std::string PromeniTxt(int izabrani)
     switch (izabrani)
     {
         case BUBBLE_SORT:
-            return ("Izabran algoritam:\n\n      BUBBLE_SORT");
+            return ("Izaberite algoritam:\n\n      BUBBLE_SORT");
 
         case SELECTION_SORT:
-            return("Izabran algoritam:\n\n  SELECTION_SORT");
+            return("Izaberite algoritam:\n\n  SELECTION_SORT");
 
         case INSERTION_SORT:
-            return("Izabran algoritam:\n\n  INSERTION_SORT");
+            return("Izaberite algoritam:\n\n  INSERTION_SORT");
 
         case QUICK_SORT:
-            return("Izabran algoritam:\n\n       QUICK_SORT");
+            return("Izaberite algoritam:\n\n       QUICK_SORT");
     }
 }

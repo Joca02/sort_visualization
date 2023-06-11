@@ -1,10 +1,7 @@
-//
-// Created by pc on 5/30/2023.
-//
 
 #include "Algoritam.hpp"
 void Algoritam::PopuniNiz() {
-    if(pRect!= nullptr)//PROBAJ OVDE EXCEPT
+    if(pRect!= nullptr)
     {
         float rectWidth=(float)WINDOW_WIDTH/N;
         int rectHeight;

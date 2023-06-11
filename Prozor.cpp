@@ -3,10 +3,10 @@
 #include "Prozor.hpp"
 
 sf::Font Prozor::font;
-
+sf::Clock clck;
 void Prozor::Prikaz(sf::RectangleShape *pRect)
 {
-    static sf::Clock clock;
+
     static sf::Text timeElapsed;
     GetProzor().clear();
     for(int i=0;i<N;i++)
@@ -28,7 +28,7 @@ void Prozor::Prikaz(sf::RectangleShape *pRect)
         timeElapsed.setFont(font);
         set= true;
     }
-    sf::Time time=clock.getElapsedTime();
+    sf::Time time=clck.getElapsedTime();
 
     double vreme=time.asSeconds();
 
@@ -38,11 +38,20 @@ void Prozor::Prikaz(sf::RectangleShape *pRect)
     GetProzor().display();
 }
 
+sf::RenderWindow window;
 
 sf::RenderWindow& Prozor::GetProzor()
 {
-    static sf::RenderWindow window(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SORTING VISUALIZATION");
     return window;
+}
+
+void Prozor::CreateProzor()
+{
+    if(!window.isOpen())
+    {
+        window.create(sf::VideoMode(WINDOW_WIDTH, WINDOW_HEIGHT), "SORTING VISUALIZATION");
+        clck.restart();
+    }
 }
 
 

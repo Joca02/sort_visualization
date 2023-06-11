@@ -12,6 +12,7 @@ private:
 public:
     static void Prikaz(sf::RectangleShape *pRect);
     static sf::RenderWindow& GetProzor();
+    static void CreateProzor();
 };
 
 

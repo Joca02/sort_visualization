@@ -14,10 +14,10 @@ protected:
     void PopuniNiz();
 
 public:
-    Algoritam(){pRect = GenerisiNiz<sf::RectangleShape>(N);}
+
     virtual void sortiraj()=0;
     friend sf::RectangleShape* GenerisiNiz(int n);
-    virtual ~Algoritam(){delete pRect; Program::potvrda=false; }
+    virtual ~Algoritam(){delete [] pRect;} //ovde nastaje zbrka
 };
 
 
