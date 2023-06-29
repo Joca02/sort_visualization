@@ -38,7 +38,7 @@ void Prozor::Prikaz(sf::RectangleShape *pRect)
     GetProzor().display();
 }
 
-sf::RenderWindow window;
+ sf::RenderWindow window;
 
 sf::RenderWindow& Prozor::GetProzor()
 {
